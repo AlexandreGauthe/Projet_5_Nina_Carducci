@@ -24,7 +24,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 	<script src="gallery-min.js" defer type="module"></script>
-	<meta charset="UTF-8">
 </head>
 <body>
 <div class="top-header">
@@ -81,11 +80,11 @@
 <div id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="filters-menu">
-		<button id="tous" class="target" type="button">Tous</button>
-		<button id="concert" type="button">Concert</button>
-		<button id="entreprise" type="button">Entreprises</button>
-		<button id="mariage" type="button">Mariages</button>
-		<button id="portrait" type="button">Portrait</button>
+		<button id="tous" class="target" type="button" aria-label="Afficher toutes les photos">Tous</button>
+		<button id="concert" type="button" aria-label="Afficher les photos de concerts">Concert</button>
+		<button id="entreprise" type="button" aria-label="Afficher les photos d'entreprises">Entreprises</button>
+		<button id="mariage" type="button" aria-label="Afficher les photos de mariages">Mariages</button>
+		<button id="portrait" type="button" aria-label="Afficher les photos de portraits">Portrait</button>
 	</div>
 	<div id="static-thumbnails" class="gallery">
 		<a href="assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" data-fslightbox="gallery">
@@ -112,7 +111,7 @@
 			<blockquote>
 				<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 			</blockquote>
-			<figcaption class="quote__author">- Richard Avedon</figcaption>
+			<figcaption class="quote__author" aria-label="Citation de Richard Avedon">- Richard Avedon</figcaption>
 		</figure>
 	</div>
 </div>
@@ -157,20 +156,20 @@
 		<blockquote>
 			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 		</blockquote>
-		<figcaption class="quote__author">- Richard Avedon</figcaption>
+		<figcaption class="quote__author" aria-label="Citation de Richard Avedon">- Richard Avedon</figcaption>
 	</figure>
 </div>
 <div id="contact">
 	<div id="coordonnees">
 		<h2>Mes coordonnées :</h2>
 		<div itemscope itemtype="https://schema.org/Person">
-			<span itemprop=”name”>Nina Carducci</span><br>
+			<span itemprop="name">Nina Carducci</span><br>
 			<span itemprop="jobTitle">Photographe</span><br>
 			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-				<span itemprop=”streetAddress”>68 avenue Alsace-Lorraine</span><br>
-				<span itemprop=”postalCode”>33200</span><span itemprop=”addressLocality”> Bordeaux</span><br>
+				<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br>
+				<span itemprop="postalCode">33200</span><span itemprop="addressLocality">Bordeaux</span><br>
 		    </div>
-			<time itemprop="openingHours" datetime="Mo,Fr 10:00-19:00">Du lundi au vendredi de 10h à 19h</time><br>
+			<span itemprop="openingHours">Du lundi au vendredi de <time>10:00</time> à <time>19:00</time></span><br>
 			<span itemprop="telephone">05 56 67 78 89</span><br>
 		</div>
 	</div>			
@@ -179,13 +178,13 @@
 			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="#" method="post">
-				<label for="nom">Nom</label>
+				<label for="nom" aria-label="Entrez votre nom">Nom</label>
 				<input type="text" name="nom" id="nom"/>
-				<label for="email">Email</label>
+				<label for="email" aria-label="Entrez votre adresse mail">Email</label>
 				<input type="email" name="email" id="email"/>
-				<label for="message">Message</label>
+				<label for="message" aria-label="Entrez votre message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
+				<input type="submit" aria-label="Cliquez pour envoyer" value="Envoyer"/>
 			</form>
 		</div>
 		<div class="picture right">
