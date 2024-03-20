@@ -24,6 +24,36 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 	<script src="gallery-min.js" defer type="module"></script>
+	<script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Nina Carducci",
+          "image": "https://github.com/AlexandreGauthe/Projet_5_Nina_Carducci/tree/main/assets/images/nina.avif",
+          "@id": "",
+          "url": "https://alexandregauthe.github.io/Projet_5_Nina_Carducci/",
+          "telephone": "05 56 67 78 89",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": " 68 avenue Alsace-Lorraine",
+            "addressLocality": "Bordeaux",
+            "postalCode": "33200",
+			"addressRegion": "Nouvelle Aquitaine",
+            "addressCountry": "FR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.862725,
+            "longitude": 2.287592
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        }
+      </script>
 </head>
 <body>
 <div class="top-header">
@@ -160,19 +190,6 @@
 	</figure>
 </div>
 <div id="contact">
-	<div id="coordonnees">
-		<h2>Mes coordonnées :</h2>
-		<div itemscope itemtype="https://schema.org/Person">
-			<span itemprop="name">Nina Carducci</span><br>
-			<span itemprop="jobTitle">Photographe</span><br>
-			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-				<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br>
-				<span itemprop="postalCode">33200</span><span itemprop="addressLocality">Bordeaux</span><br>
-		    </div>
-			<span itemprop="openingHours">Du lundi au vendredi de <time>10:00</time> à <time>19:00</time></span><br>
-			<span itemprop="telephone">05 56 67 78 89</span><br>
-		</div>
-	</div>			
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
